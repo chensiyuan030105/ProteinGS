@@ -156,11 +156,9 @@
           <image src="./static/images/pipeline.png" width=90% style="display: block; margin: auto;"></image>
           <br>
           <p class="text-justify">
-            (Left) The visual geometry of a physical object in an image is determined by three orthogonal attributes: mechanical properties, external forces, and rest-shape geometry.
-            (Right) Given predefined mechanical properties and external forces, 
-            our pipeline optimizes the rest-shape geometry to ensure that the shape, 
-            when in a state of static equilibrium, 
-            aligns with the target image and meets stability criteria.
+            Provisional all-atom coordinates from the diffusion model are corrected by a Gauss-Seidel projection that sequentially resolves local constraints, each acting on a small set of
+            atoms and updating coordinates in place. The module is differentiable via implicit differentiation, allowing seamless integration into training. The same projection is applied at inference, ensuring
+            physical validity and enabling accurate predictions with as few as two denoising steps.            
           </p>
       </div>
   </div>
