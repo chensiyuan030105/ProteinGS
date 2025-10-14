@@ -173,35 +173,45 @@
     <h2 class="title is-3">Evaluation</h2>
 
     <div class="content has-text-justified">
+      <p>
+        <h3 class="title is-4">Visual comparison with the ground truth</h3>
+        We visualize our predicted protein structures together with their corresponding ground truth (pink colored) across a diverse set of PDB entries.
+        Each protein's name is indicated in the top-left corner. Our method shows consistently close agreement with the ground truth, capturing the overall structural features with high fidelity.
+      </p>      
       <br>
-      <image src="./static/images/Quantitative.png" width=90% style="display: block; margin: auto;"></image>
+      <image src="./static/images/20_example.png" width=90% style="display: block; margin: auto;"></image>
       <br>
+    </div>
+
+    <div class="content has-text-justified">
       <p>
         <h3 class="title is-4">Quantitative Results</h3>
         Our method uses only 2 denoising steps yet alwaysguarantees physical validity and achieves competitive structural accuracy compared to baselines.
-      </p>
+      </p>      
+      <br>
+      <image src="./static/images/Quantitative.png" width=90% style="display: block; margin: auto;"></image>
+      <br>
     </div>
 
-
     <div class="content has-text-justified">
-      <br>
-      <image src="./static/images/Qualitative.png" width=90% style="display: block; margin: auto;"></image>
-      <br>
       <p>
         <h3 class="title is-4">Qualitative Results</h3>
         The red color highlights physicallyinvalid predictions, such as atomic clashes. Our approach consistently guarantees physical validity.
       </p>
+      <br>
+      <image src="./static/images/Qualitative.png" width=90% style="display: block; margin: auto;"></image>
+      <br>
     </div>
 
     <div class="content has-text-justified">
-      <br>
-      <image src="./static/images/convergence_and_runtime.png" width=90% style="display: block; margin: auto;"></image>
-      <br>
       <p>
         <h3 class="title is-4">Cnvergence and Runtime</h3>
         Convergence Speed: Gauss-Seidel quickly reduces potential, converging within 20 iterations; gradient descent oscillates and converges slowly (left).
         Runtime: On CASP15, our method is &sim;9-10&times; faster than 200-step baselines and &sim;23-46&times; faster than Boltz-1-Steering.
       </p>
+      <br>
+      <image src="./static/images/convergence_and_runtime.png" width=90% style="display: block; margin: auto;"></image>
+      <br>
     </div>
 
     <!--/ Evaluation. -->
