@@ -334,15 +334,30 @@
     </div>
 
     <div class="content has-text-justified">
+      <h3 class="title is-4">Projection Examples</h3>
       <p>
-        <h3 class="title is-4">Cnvergence and Runtime</h3>
-        Convergence Speed: Gauss-Seidel quickly reduces potential, converging within 20 iterations; gradient descent oscillates and converges slowly (left).
-        Runtime: On CASP15, our method is &sim;9-10&times; faster than 200-step baselines and &sim;23-46&times; faster than Boltz-1-Steering.
+        We show representative local regions before and after Gauss-Seidel projection.
+        The projection resolves steric conflicts and improves physical plausibility while preserving the overall structure,
+        leading to low RMSD across diverse PDB examples.
+      </p>
+      <br>
+      <image src="./static/images/projection_example_1.png" width=90% style="display: block; margin: auto;"></image>
+      <br>
+    </div>
+
+    <div class="content has-text-justified">
+      <h3 class="title is-4">Convergence and Runtime</h3>
+      <p>
+        Gauss-Seidel projection rapidly decreases the constraint energy and typically converges within 20 iterations,
+        whereas gradient descent oscillates and converges more slowly (left).
+        On CASP15, our method is &sim;9-10&times; faster than 200-step baselines and &sim;23-46&times; faster than Boltz-1-Steering.
       </p>
       <br>
       <image src="./static/images/convergence_and_runtime.png" width=90% style="display: block; margin: auto;"></image>
       <br>
     </div>
+
+
 
     <!--/ Evaluation. -->
   
