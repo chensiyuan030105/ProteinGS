@@ -1,1 +1,1 @@
-# PhysComp
+# ProteinGS
